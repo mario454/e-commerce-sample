@@ -1,0 +1,880 @@
+body {
+    /* background-image: url("background.png"); */
+    overflow-x: hidden;
+}
+
+#Home_web {
+    display: block;
+}
+
+#row_before {
+    width: 1378px;
+}
+
+#row_after {
+    width: 1378px;
+    display: none;
+}
+
+#image_nav {
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    margin-left: 30px;
+    display: inline;
+}
+
+#text_image_nav {
+    color: rgb(151, 9, 9);
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-size: xx-large;
+    opacity: 0%;
+    margin-left: -10px;
+    transition: all 0.6s;
+
+}
+
+#image_nav:hover+#text_image_nav {
+    opacity: 100%;
+    margin-left: 0px;
+}
+
+#search {
+    margin-top: 15px;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-size: medium;
+}
+
+#home {
+    text-decoration: none;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-size: large;
+    /* margin-left: -70px; */
+    color: rgb(184, 180, 180);
+    transition: font-size 0.1s;
+}
+
+#home:hover {
+    color: rgb(43, 161, 161);
+    font-size: larger;
+    text-decoration: underline;
+}
+
+#dropdown,
+#dropdown_after {
+    position: relative;
+    align-items: center;
+    COLOR: WHITE;
+}
+
+#menu,
+#menu_after {
+    display: none;
+    width: 210px;
+    height: 100px;
+    background-color: black;
+    color: whitesmoke;
+    z-index: 100;
+    position: absolute;
+    text-align: center;
+    left: -85px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+
+}
+
+#close_reg,
+#close_log,
+#close_cart,
+#close_cart_after,
+#close_not,
+#warning_btn {
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-size: x-large;
+    margin-left: 85%;
+}
+
+#close_reg:hover,
+#close_log:hover,
+#close_cart:hover,
+#close_cart_after:hover,
+#close_not:hover,
+#warning_btn:hover {
+    color: red;
+}
+
+#sign,
+#reg,
+#cart,
+#out,
+#cart_after,
+#not {
+    display: none;
+}
+
+#signin,
+#register,
+#logout {
+    position: absolute;
+    border-radius: 20px;
+    background-color: black;
+    color: aliceblue;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    display: inline;
+    left: 0%;
+    width: 100px;
+    border-style: groove;
+    border-bottom-color: aliceblue;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 1px 1px 2px white;
+    cursor: pointer;
+}
+
+#register {
+    left: 50%
+}
+
+#logout {
+    left: 25%;
+}
+
+#signin:hover,
+#register:hover,
+#logout:hover {
+    font-size: large;
+    box-shadow: 1px 1px 2px red;
+    border-bottom-color: red;
+}
+
+#pop_sign,
+#pop_reg,
+#pop_cart,
+#pop_cart_after,
+#pop_not,
+#warning_login {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.938);
+    left: -520px;
+    top: 100px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 1px 1px 10px black;
+    color: rgb(27, 27, 27);
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    z-index: 10000;
+}
+
+#pop_cart,
+#pop_cart_after,
+#pop_not {
+    top: 20%;
+    left: 35%;
+    width: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+#warning_login {
+    top: 100%;
+    left: 35%;
+    height: 300px;
+}
+
+#sign:checked~#pop_sign {
+    display: block;
+}
+
+#reg:checked~#pop_reg {
+    display: block;
+}
+
+#cart:checked~#pop_cart {
+    display: block;
+}
+
+#cart_after:checked~#pop_cart_after {
+    display: block;
+}
+
+#not:checked~#pop_not {
+    display: block;
+}
+
+#email_log,
+#email_reg {
+    display: inline;
+    margin-left: 22px;
+    width: 270px;
+}
+
+#pass_log,
+#pass_reg,
+#cpass_reg {
+    display: inline;
+    width: 270px;
+    margin-left: 30px;
+}
+
+#email_reg {
+    width: 240px;
+    margin-left: 66px;
+}
+
+#pass_reg {
+    width: 240px;
+    margin-left: 70px;
+}
+
+#cpass_reg {
+    width: 240px;
+    margin-left: 10px;
+}
+
+/*SLider*/
+#slider_discount {
+    background-color: #354dad;
+    margin-top: 10px;
+    width: 1378px;
+    height: 350px;
+    /* background-image: url("first.jpeg"); */
+    /* background-size: contain; */
+}
+
+#previous {
+    margin-left: 0%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 12%;
+    background-color: rgba(245, 245, 245, 0.6);
+    border: none;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 1200px;
+    background-color: rgba(245, 245, 245, 0.6);
+    border: none;
+    margin-top: 12%;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#offers {
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    bottom: 200px;
+    display: flex;
+}
+
+
+#offer1,
+#offer2,
+#offer3 {
+    margin-left: 100px;
+    margin-top: -30px;
+    width: 40px;
+    height: 5px;
+    border-radius: 25%;
+    background-color: white;
+    display: inline;
+    border-style: solid;
+}
+
+#offer1 {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(255, 255, 230, 0.6);
+}
+
+/*rest*/
+#most_selling {
+    position: relative;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    display: inline;
+    z-index: 9;
+}
+
+#most_selling:before {
+    content: "";
+    background-color: cadetblue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: skewX(15deg);
+    margin: -5px;
+}
+
+#products_selling {
+    width: 1400px;
+    height: 300px;
+    margin-left: 30px;
+    position: relative;
+
+}
+
+#samsung_s24_ultra,
+#HP_PROBOOK_650,
+#Xiaomi_Redmi_Buds_4,
+#Samsung_Galaxy_Watch_5 {
+    width: 100px;
+    height: 280px;
+    margin: 10px;
+    border-radius: 20px;
+    position: absolute;
+    display: inline;
+    transition: width 0.5s;
+    background-image: url("Samsung s24 ultra_.jpeg");
+    transition: width 0.4s;
+    border-color: black;
+}
+
+#HP_PROBOOK_650 {
+    margin-left: 115px;
+    transition: margin-left 0.4s, width 0.4s;
+    background-image: url("HP\ PROBOOK\ 650_.jpeg");
+}
+
+#Xiaomi_Redmi_Buds_4 {
+    margin-left: 220px;
+    transition: margin-left 0.4s, width 0.4s;
+    background-image: url("Xiaomi Redmi Buds 4_.jpeg");
+}
+
+#Samsung_Galaxy_Watch_5 {
+    margin-left: 325px;
+    transition: margin-left 0.4s, width 0.4s;
+    background-image: url("Samsung\ Galaxy\ Watch\ 5_.jpeg");
+}
+
+#samsung_s24_ultra:hover {
+    width: 200px;
+}
+
+#samsung_s24_ultra:hover~#HP_PROBOOK_650 {
+    margin-left: 225px;
+}
+
+#samsung_s24_ultra:hover~#Xiaomi_Redmi_Buds_4 {
+    margin-left: 330px;
+}
+
+#samsung_s24_ultra:hover~#Samsung_Galaxy_Watch_5 {
+    margin-left: 435px;
+}
+
+#samsung_s24_ultra:hover>div>.text_of_card {
+    display: block;
+    margin-left: 0px;
+    width: 140px;
+    height: 20px;
+}
+
+#samsung_s24_ultra:hover>div>#add_to_cart {
+    display: block;
+    width: 160px;
+    height: 50px;
+    opacity: 100%;
+}
+
+#HP_PROBOOK_650:hover {
+    width: 200px;
+}
+
+#HP_PROBOOK_650:hover~#Xiaomi_Redmi_Buds_4 {
+    margin-left: 325px;
+}
+
+#HP_PROBOOK_650:hover~#Samsung_Galaxy_Watch_5 {
+    margin-left: 430px;
+}
+
+#HP_PROBOOK_650:hover>div>.text_of_card {
+    display: block;
+    margin-left: 0px;
+    width: 140px;
+    height: 20px;
+}
+
+#HP_PROBOOK_650:hover>div>#add_to_cart {
+    display: block;
+    width: 160px;
+    height: 50px;
+    opacity: 100%;
+}
+
+#Xiaomi_Redmi_Buds_4:hover {
+    width: 200px;
+}
+
+#Xiaomi_Redmi_Buds_4:hover~#Samsung_Galaxy_Watch_5 {
+    margin-left: 430px;
+}
+
+
+#Xiaomi_Redmi_Buds_4:hover>div>.text_of_card {
+    display: block;
+    margin-left: 0px;
+    width: 140px;
+    height: 20px;
+}
+
+
+#Xiaomi_Redmi_Buds_4:hover>div>#add_to_cart {
+    display: block;
+    width: 160px;
+    height: 50px;
+    opacity: 100%;
+}
+
+#Samsung_Galaxy_Watch_5:hover {
+    width: 200px;
+}
+
+#Samsung_Galaxy_Watch_5:hover>div>.text_of_card {
+    display: block;
+    margin-left: 0px;
+    width: 140px;
+    height: 20px;
+}
+
+#Samsung_Galaxy_Watch_5:hover>div>#add_to_cart {
+    display: block;
+    width: 160px;
+    height: 50px;
+    opacity: 100%;
+}
+
+.text_of_card {
+    color: rgb(88, 88, 88);
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-size: medium;
+    display: none;
+    transition: display 0.5s;
+    margin-top: 10px;
+    margin-left: -20px;
+    width: 10px;
+    height: 10px;
+    transition: all 10s;
+    text-wrap: wrap;
+}
+
+.title_of_card {
+    color: black;
+    font-size: larger;
+    font-weight: 800;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+}
+
+.price {
+    margin-top: 40px;
+    color: rgb(46, 223, 46);
+    font-size: larger;
+    margin-top: 70px;
+    font-weight: 600;
+}
+
+#add_to_cart {
+    width: 10px;
+    height: 10px;
+    display: none;
+    opacity: 0;
+    margin-top: 25px;
+    transition: opacity 0.4s;
+}
+
+
+#categories {
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-bottom: 70px;
+    width: 1375px;
+    height: 300px;
+    position: relative;
+
+}
+
+#q1,
+#q2,
+#q3,
+#q4 {
+    width: 400px;
+    height: 100px;
+    display: inline;
+    position: absolute;
+}
+
+#q2,
+#q4 {
+    display: block;
+}
+
+#q2 {
+    left: 50%
+}
+
+#q3 {
+    top: 50%
+}
+
+#q4 {
+    left: 50%;
+    top: 50%;
+}
+
+#mobile,
+#lab,
+#smartwatch,
+#airbods {
+    width: 300px;
+    height: 100px;
+    margin-left: 60px;
+    display: inline;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    color: white;
+    font-size: x-large;
+    font-weight: 800;
+    background-color: rgba(128, 128, 128, 0.842);
+    border-color: black;
+    box-shadow: 1px 1px 5px black;
+    border: none;
+    transition: all 0.2s;
+}
+
+#mobile:hover,
+#lab:hover,
+#smartwatch:hover,
+#airbods:hover {
+    background-image: linear-gradient(45deg, #4deeea, #001eff);
+    border: none;
+    border-color: #001eff;
+    box-shadow: 1px 1px 5px #001eff;
+    color: black;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+#lab {
+    display: block;
+}
+
+/*Loading*/
+
+#pre_load {
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+
+#loading {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    transition: all 0.5s;
+    border-left-color: transparent;
+    margin-top: 200px;
+    margin-left: 620px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: spinner;
+    z-index: 1000;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Footer*/
+
+footer {
+    height: 210px;
+    bottom: 0px;
+    width: 100%;
+    background-image: linear-gradient(290deg, rgba(34, 34, 119, 0.856), rgba(86, 180, 204, 0.877));
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+}
+
+#left,
+#right2 {
+    width: 70%;
+    height: 196px;
+    text-align: left;
+    font-size: larger;
+    position: absolute;
+    margin: 10px;
+}
+
+#right2 {
+    left: 71%;
+    width: 200px;
+    text-align: center;
+}
+
+
+#email-us,
+#facebook,
+#instgram,
+#fm,
+#fl,
+#fa,
+#fs {
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(34, 34, 119, 0.856);
+    color: #e6dddd;
+    font-family: "Playwrite HU", cursive;
+    font-optical-sizing: auto;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#email-us:hover,
+#facebook:hover,
+#instgram:hover {
+    color: rgb(104, 27, 27);
+    background-color: rgba(108, 108, 204, 0.856);
+    box-shadow: 1px 1px 3px #001eff;
+    text-decoration: underline;
+}
+
+#ff {
+    background-color: transparent;
+    margin-top: -5px;
+    margin-left: 35px;
+}
+
+#ff:hover {
+    color: rgb(104, 27, 27);
+    text-decoration: underline;
+}
+
+/*mobile_web*/
+#mobile_web,
+#lab_web,
+#airbods_web,
+#smartwatch_web {
+    margin-bottom: 200px;
+    display: none;
+}
+
+
+#company1,
+#company2 {
+    width: 1400px;
+    height: 700px;
+    /* display:inline; */
+}
+
+#company2 {
+    height: 600px;
+}
+
+#samsung_s24_ultra_,
+#HP_PROBOOK_650_,
+#Xiaomi_Redmi_Airpods_5_Pro,
+#Samsung_Galaxy_Watch_5_,
+#Samsung_23_ultra_,
+#Samsung_Smart_Watch_6,
+#Xiaomi_Redmi_Airpods_5_Pro,
+#HP_Envy,
+#Xiaomi_Redmi_Buds_4_,
+#IPhone_14_Pro_Max_,
+#Apple_Smart_Watch_Ultra_2,
+#Apple_Airpods_3,
+#Apple_MAC_Pro_Book_2023,
+#IPhone_15_Pro_max_,
+#Apple_Smart_Watch_Series_9,
+#Apple_Airpods_Pro,
+#Apple_MAC_Book_Air {
+    width: 300px;
+    height: 600px;
+    margin: 30px;
+    transition: all 0.4s;
+}
+
+#Samsung_23_ultra_,
+#Samsung_Smart_Watch_6,
+#Xiaomi_Redmi_Airpods_5_Pro,
+#HP_Envy,
+#IPhone_15_Pro_max_,
+#Apple_Smart_Watch_Series_9,
+#Apple_Airpods_Pro,
+#Apple_MAC_Book_Air {
+    position: absolute;
+    top: 15.9%;
+    left: 50%;
+}
+
+#IPhone_15_Pro_max_,
+#Apple_MAC_Book_Air,
+#Apple_Airpods_Pro,
+#Apple_Smart_Watch_Series_9 {
+    top: 144.5%;
+}
+
+#img_for_card {
+    height: 230px;
+}
+
+#increase,
+#decrease {
+    border-radius: 30%;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    border-color: red;
+    border-style: solid;
+}
+
+#decrease {
+    border-color: blue;
+
+}
+
+#control_of_card {
+    position: absolute;
+    top: 80%;
+    /* border-style: solid; */
+}
+
+#increase:hover {
+    background-color: red;
+}
+
+#decrease:hover {
+    background-color: blue;
+}
+
+
+#add_to_cart_cat {
+    margin-left: 50px;
+}
+
+
+#samsung_s24_ultra_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Xiaomi_Redmi_Buds_4_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Xiaomi_Redmi_Airpods_5_Pro:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#HP_PROBOOK_650_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Samsung_23_ultra_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Samsung_Smart_Watch_6:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Xiaomi_Redmi_Airpods_5_Pro:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#HP_Envy:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#IPhone_14_Pro_Max_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Apple_Smart_Watch_Ultra_2:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Apple_Airpods_3:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Apple_MAC_Pro_Book_2023:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#IPhone_15_Pro_max_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Apple_Smart_Watch_Series_9:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Apple_Airpods_Pro:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Apple_MAC_Book_Air:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
+
+#Samsung_Galaxy_Watch_5_:hover {
+    background-color: rgba(127, 255, 212, 0.699);
+    transform: scale(1.1);
+}
